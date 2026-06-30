@@ -1,0 +1,109 @@
+/* 軽貨物求人.com グローバルスタイル */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #f5f5f5; color: #222; }
+a { text-decoration: none; color: inherit; }
+
+.kk-app { max-width: 1100px; margin: 0 auto; }
+
+/* ヘッダー */
+.kk-header { background: #1a237e; color: #fff; text-align: center; padding: 20px; }
+.kk-site-name { font-size: 28px; font-weight: 700; letter-spacing: 3px; }
+.kk-site-sub { font-size: 12px; margin-top: 4px; opacity: 0.8; }
+
+/* CarryFlowバナー */
+.kk-carryflow-bar { background: #f3f3f3; text-align: center; padding: 7px 12px; border-bottom: 1px solid #e0e0e0; font-size: 13px; }
+.kk-carryflow-text { color: #555; }
+.kk-qr { color: #1565c0; margin-left: 8px; font-weight: 600; cursor: pointer; }
+
+/* プレミアム広告 */
+.kk-premium-ad { background: #fff8e1; border-bottom: 2px solid #ffe082; text-align: center; padding: 12px; }
+.kk-premium-label { font-size: 11px; color: #f57f17; font-weight: 600; margin-bottom: 4px; }
+.kk-premium-company { font-size: 16px; font-weight: 700; color: #333; }
+.kk-premium-desc { font-size: 11px; color: #777; margin-top: 4px; }
+
+/* ナビ */
+.kk-nav { background: #fff; display: flex; justify-content: space-between; align-items: center; padding: 8px 16px; border-bottom: 1px solid #e0e0e0; }
+.kk-nav-links { display: flex; gap: 20px; }
+.kk-nav-links a { font-size: 13px; color: #444; }
+.kk-nav-links a:hover { color: #1565c0; }
+.kk-btn-post { background: #1a237e; color: #fff; border: none; border-radius: 5px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; }
+.kk-btn-post:hover { background: #283593; }
+
+/* 検索 */
+.kk-search-section { background: #e8eaf6; padding: 14px 16px; border-bottom: 1px solid #e0e0e0; }
+.kk-search-box { display: flex; gap: 8px; max-width: 600px; margin: 0 auto; }
+.kk-search-input { flex: 1; border: 1px solid #ccc; border-radius: 5px; padding: 8px 12px; font-size: 13px; outline: none; }
+.kk-search-input:focus { border-color: #1565c0; }
+.kk-btn-search { background: #1565c0; color: #fff; border: none; border-radius: 5px; padding: 8px 20px; font-size: 13px; font-weight: 600; cursor: pointer; }
+
+/* エリアセクション */
+.kk-area-section { background: #fff; padding: 16px; border-bottom: 1px solid #e0e0e0; }
+.kk-section-title { font-size: 15px; font-weight: 700; color: #1a237e; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+.kk-total-count { font-size: 13px; color: #f57f17; font-weight: 700; }
+.kk-more-link { font-size: 12px; color: #1565c0; font-weight: 400; cursor: pointer; }
+
+/* 地図 */
+.kk-map-wrap { width: 100%; margin-bottom: 16px; }
+.kk-map-svg { width: 100%; max-width: 500px; display: block; margin: 0 auto; background: #e8f4f8; border: 1px solid #ddd; border-radius: 8px; }
+.kk-map-region { fill: #bbdefb; stroke: #1565c0; stroke-width: 1.5; cursor: pointer; transition: fill 0.2s; }
+.kk-map-region:hover { fill: #90caf9; }
+.kk-map-region.active { fill: #1565c0; }
+.kk-map-label { font-size: 11px; fill: #333; font-weight: 600; pointer-events: none; }
+.kk-map-region.active ~ text { fill: #fff; }
+.kk-map-count { font-size: 9px; fill: #f57f17; font-weight: 700; pointer-events: none; }
+
+/* 地方リスト */
+.kk-region-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 12px; }
+.kk-region-item { border: 1px solid #ddd; border-radius: 6px; padding: 8px 10px; background: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: border-color 0.2s; }
+.kk-region-item:hover { border-color: #1565c0; }
+.kk-region-item.active { border-color: #1565c0; background: #e3f2fd; }
+.kk-region-name { font-size: 12px; font-weight: 600; color: #333; }
+.kk-region-item.active .kk-region-name { color: #1565c0; }
+.kk-region-count { font-size: 11px; color: #f57f17; font-weight: 700; }
+
+/* 都道府県パネル */
+.kk-pref-panel { border: 1px solid #1565c0; border-radius: 8px; padding: 12px; background: #f8fbff; margin-top: 8px; }
+.kk-panel-title { font-size: 11px; color: #1565c0; font-weight: 700; margin-bottom: 8px; }
+.kk-pref-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+.kk-pref-btn { border: 1px solid #ddd; border-radius: 5px; padding: 6px 10px; font-size: 11px; color: #555; background: #fff; cursor: pointer; text-align: center; transition: border-color 0.2s; }
+.kk-pref-btn:hover { border-color: #1565c0; color: #1565c0; }
+.kk-pref-btn.active { border-color: #1565c0; background: #e3f2fd; color: #1565c0; font-weight: 700; }
+.kk-pref-count { font-size: 10px; color: #f57f17; font-weight: 700; margin-top: 2px; }
+
+/* エリアパネル */
+.kk-area-panel { margin-top: 12px; padding-top: 12px; border-top: 1px solid #c5d8f0; }
+.kk-area-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; margin-top: 6px; }
+.kk-area-btn { border: 1px solid #ddd; border-radius: 5px; padding: 6px 8px; font-size: 11px; text-align: center; color: #555; background: #fff; cursor: pointer; transition: border-color 0.2s; }
+.kk-area-btn:hover { border-color: #1565c0; color: #1565c0; }
+.kk-area-count { font-size: 10px; color: #f57f17; font-weight: 700; margin-top: 2px; }
+
+/* タグ */
+.kk-tag { display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 3px; font-weight: 600; }
+.kk-tag-premium { background: #ede7f6; color: #512da8; }
+.kk-tag-paid { background: #fff8e1; color: #f57f17; }
+.kk-tag-free { background: #e8f5e9; color: #2e7d32; }
+
+/* 案件カード */
+.kk-jobs-section { background: #fff; padding: 16px; border-bottom: 1px solid #e0e0e0; }
+.kk-job-card { border: 1px solid #eee; border-radius: 7px; padding: 10px 14px; margin-bottom: 8px; background: #fff; cursor: pointer; transition: box-shadow 0.2s; }
+.kk-job-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.kk-job-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.kk-job-title { font-size: 13px; font-weight: 600; color: #222; }
+.kk-job-meta { font-size: 11px; color: #777; }
+
+/* フッター */
+.kk-footer { background: #f0f0f0; text-align: center; padding: 16px; }
+.kk-footer-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+.kk-footer-links a { font-size: 11px; color: #666; }
+.kk-footer-links a:hover { color: #1565c0; }
+.kk-footer-copy { font-size: 10px; color: #999; }
+
+/* レスポンシブ（スマホ） */
+@media (max-width: 600px) {
+  .kk-site-name { font-size: 20px; }
+  .kk-nav { flex-direction: column; gap: 8px; }
+  .kk-nav-links { gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .kk-region-list { grid-template-columns: repeat(2, 1fr); }
+  .kk-area-grid { grid-template-columns: repeat(2, 1fr); }
+  .kk-footer-links { gap: 10px; }
+}
