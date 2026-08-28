@@ -88,6 +88,7 @@ export default async function handler(req, res) {
       paymentTermsOther: form.paymentTermsOther || '',
       workDays: form.workDays || [],
       hasRoyalty: form.hasRoyalty || '',
+      invoiceRequired: form.invoiceRequired || '',
       workLocation: form.workLocation || '',
       jobDescription: form.jobDescription || '',
       benefits: form.benefits || '',
